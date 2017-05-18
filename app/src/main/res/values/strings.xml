@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SolarSystemProject</string>
+    <string name="action_developments">События</string>
+    <string name="action_information">Информация</string>
+    <string name="action_game">Игра</string>
+</resources>
