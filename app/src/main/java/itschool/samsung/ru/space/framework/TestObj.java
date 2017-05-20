@@ -21,16 +21,23 @@ public class TestObj implements Renderable, Updatable {
     float move;
     float location;
     float between;
+    int R;
+    int G;
+    int B;
     String name;
     String color;
 
 
-    public TestObj(String name,float g,float move, String color,float location,float between) {
+    public TestObj(String name,float g,float move, String color,int R,int G,int B,float location,float between) {
         this.name=name;
         this.g=g;
         this.move=move;
         this.color = color;
-        paint.setColor(Color.parseColor(color.toLowerCase()));
+        this.R = R;
+        this.G = G;
+        this.B = B;
+       // paint.setColor(Color.parseColor(color.toLowerCase()));
+        paint.setARGB(255,R,G,B);
         this.location=location;
         this.between=between;
         paint1.setColor(Color.WHITE);
