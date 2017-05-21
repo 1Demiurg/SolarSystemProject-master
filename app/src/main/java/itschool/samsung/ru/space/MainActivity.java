@@ -39,7 +39,8 @@ static public int width,height;
         // Операции для выбранного пункта меню
         switch (id) {
             case R.id.action_sob:
-
+                Intent intentE = new Intent(MainActivity.this, Events.class);
+                startActivity(intentE);
                 return true;
             case R.id.action_information:
                 Intent intent = new Intent(MainActivity.this, information.class);
@@ -51,6 +52,8 @@ static public int width,height;
                 //intent.putExtra("OPEN_ID",acmi.id);
                 startActivity(intentG);
                 return true;
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }

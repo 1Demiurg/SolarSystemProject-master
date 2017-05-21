@@ -19,8 +19,7 @@ public class Events extends AppCompatActivity {
 
     final Context context = this;
     ListView lvMain;
-    String[] word1 = {"Затмение",
-    };
+    String[] word1 = {"Затмение"};
     String[] word2 = {"Затмения бывают 2 видов солнечное и лунное."};
 
     @Override
