@@ -1,4 +1,4 @@
-package itschool.samsung.ru.space.framework;
+package itschool.samsung.ru.space;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

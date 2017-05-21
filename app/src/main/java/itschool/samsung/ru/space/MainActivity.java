@@ -9,7 +9,6 @@ import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import itschool.samsung.ru.space.framework.Game;
 import itschool.samsung.ru.space.framework.GameView;
 
 public class MainActivity extends AppCompatActivity {

@@ -32,9 +32,9 @@ public class GameView extends View {
         objects.add(new TestObj("Марс",    0.33f+9,  2.41f/2,"RED",   255,43,43 ,    4,d+15));
         objects.add(new TestObj("Юпитер",  6.99f+25, 1.3f/2, "GREEN", 255,201,102,   5,d+15));
         objects.add(new TestObj("Сатурн",  5.82f+22, 0.96f/2,"YELLOW",255,255,153,  6,d+20));
-        objects.add(new TestObj("Уран",    2.53f+16, 0.68f/2,"BLUE",  135,206,250 ,  7,d+25));
-        objects.add(new TestObj("Нептун",  2.46f+19, 0.54f/2,"BLUE",  0,0,139,    8,d+30));
-        objects.add(new TestObj("Плутон",  0.1f+6, 0.45f/2,"GRAY",  255,153,51,    9,d+35));
+        objects.add(new TestObj("Уран",    2.53f+16, 0.68f/2,"BLUE",  135,206,250 ,  7,d+20));
+        objects.add(new TestObj("Нептун",  2.46f+19, 0.54f/2,"BLUE",  0,0,139,    8,d+20));
+        objects.add(new TestObj("Плутон",  0.1f+6, 0.45f/2,"GRAY",  255,153,51,    9,d+20));
 
         //x = MainActivity.width;
         //y = MainActivity.height;
@@ -48,7 +48,7 @@ public class GameView extends View {
     @Override
 
     protected void onDraw(Canvas canvas){
-        canvas.drawARGB(255, 40, 40, 40);
+        canvas.drawARGB(255, 0, 0, 0);
         long currentTime = System.currentTimeMillis();
         drawObjects(canvas);
         updateObjects((currentTime - lastUpdate)*0.01f);

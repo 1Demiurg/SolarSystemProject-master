@@ -7,10 +7,10 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Информация о обьектах солнечной системы и приложении">
+        android:text="События в солнечной системе">
     </TextView>
     <ListView
-        android:id="@+id/lvMain"
+        android:id="@+id/wlvMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>

@@ -3,4 +3,20 @@
     <string name="action_developments">События</string>
     <string name="action_information">Информация</string>
     <string name="action_game">Игра</string>
+    <string-array name="names">
+        <item>Солнце</item>
+        <item>Меркурий</item>
+        <item>Венера</item>
+        <item>Земля</item>
+        <item>Марс</item>
+        <item>Юпитер</item>
+        <item>Сатурн</item>
+        <item>Уран</item>
+        <item>Нептун</item>
+        <item>Плутон</item>
+        <item>О приложении</item>
+    </string-array>
 </resources>
+
+
+
