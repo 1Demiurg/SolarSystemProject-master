@@ -38,7 +38,7 @@ static public int width,height;
 
         // Операции для выбранного пункта меню
         switch (id) {
-            case R.id.action_sob:
+            case R.id.action_events:
                 Intent intentE = new Intent(MainActivity.this, Events.class);
                 startActivity(intentE);
                 return true;

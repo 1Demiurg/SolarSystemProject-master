@@ -19,7 +19,7 @@ public class Events extends AppCompatActivity {
 
     final Context context = this;
     ListView lvMain;
-    String[] word1 = {"Затмение"};
+    String[] word1 = {"Затмения"};
     String[] word2 = {"Затмения бывают 2 видов солнечное и лунное."};
 
     @Override
@@ -31,7 +31,7 @@ public class Events extends AppCompatActivity {
         // находим список
         lvMain = (ListView) findViewById(R.id.wlvMain);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this, R.array.names, android.R.layout.simple_list_item_1);
+                this, R.array.events, android.R.layout.simple_list_item_1);
         lvMain.setAdapter(adapter);
 
         lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
