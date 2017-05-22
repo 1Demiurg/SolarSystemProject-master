@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.support.annotation.Dimension;
 import android.view.Window;
 
+import itschool.samsung.ru.space.Settings;
 import itschool.samsung.ru.space.framework.Renderable;
 import itschool.samsung.ru.space.framework.Updatable;
 
@@ -52,7 +53,7 @@ public class TestObj implements Renderable, Updatable {
     @Override
     public void render(Canvas canvas) {
 
-        canvas.drawCircle(ox, py,g, paint);
+        canvas.drawCircle(ox, py,g* Settings.size_2_0, paint);
         paint1.setStyle(Paint.Style.FILL);
         canvas.drawText(name, ox-20, py+g+5, paint1);
 
@@ -60,9 +61,9 @@ public class TestObj implements Renderable, Updatable {
 
     @Override
     public void update(float dt) {
-            t +=move/100;
-            ox = between* location  * (float) Math.cos((double) t) + GameView.x;
-            py = between* location *(float) Math.sin((double) t) + GameView.y;
+            t +=move/100*Settings.spid;
+            ox = Settings.radius*between* location  * (float) Math.cos((double) t) + GameView.x;
+            py = Settings.radius*between* location *(float) Math.sin((double) t) + GameView.y;
 
     }
 }

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 import itschool.samsung.ru.space.framework.GameView;
 
@@ -17,13 +18,16 @@ static public int width,height;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
         setT();
+
         Log.i(TAG, String.valueOf(width)+" "+ String.valueOf(height));
         GameView.x = width;
         GameView.y = height;
 
-        getSupportActionBar().hide();
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,6 +55,12 @@ static public int width,height;
                 Intent intentG = new Intent(MainActivity.this, Game.class);
                 //intent.putExtra("OPEN_ID",acmi.id);
                 startActivity(intentG);
+                return true;
+
+            case R.id.action_settings:
+                Intent intentS = new Intent(MainActivity.this, Settings.class);
+                //intent.putExtra("OPEN_ID",acmi.id);
+                startActivity(intentS);
                 return true;
 
 
