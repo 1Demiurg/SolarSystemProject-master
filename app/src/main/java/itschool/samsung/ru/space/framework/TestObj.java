@@ -37,7 +37,6 @@ public class TestObj implements Renderable, Updatable {
         this.R = R;
         this.G = G;
         this.B = B;
-       // paint.setColor(Color.parseColor(color.toLowerCase()));
         paint.setARGB(255,R,G,B);
         this.location=location;
         this.between=between;
@@ -53,7 +52,7 @@ public class TestObj implements Renderable, Updatable {
     @Override
     public void render(Canvas canvas) {
 
-        canvas.drawCircle(ox, py,g* Settings.size_2_0, paint);
+        canvas.drawCircle(ox, py,g* Settings.size_2_0/2, paint);
         paint1.setStyle(Paint.Style.FILL);
         canvas.drawText(name, ox-20, py+g+5, paint1);
 

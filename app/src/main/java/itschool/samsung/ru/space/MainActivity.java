@@ -13,6 +13,7 @@ import android.view.Window;
 import itschool.samsung.ru.space.framework.GameView;
 
 public class MainActivity extends AppCompatActivity {
+
 static public int width,height;
     private static final String TAG = "MyApp";
     @Override
@@ -27,7 +28,6 @@ static public int width,height;
         GameView.x = width;
         GameView.y = height;
 
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -36,33 +36,29 @@ static public int width,height;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        // получим идентификатор выбранного пункта меню
+
         int id = item.getItemId();
 
-
-        // Операции для выбранного пункта меню
         switch (id) {
             case R.id.action_events:
                 Intent intentE = new Intent(MainActivity.this, Events.class);
                 startActivity(intentE);
                 return true;
+
             case R.id.action_information:
                 Intent intent = new Intent(MainActivity.this, information.class);
-                //intent.putExtra("OPEN_ID",acmi.id);
                 startActivity(intent);
                 return true;
+
             case R.id.action_game:
                 Intent intentG = new Intent(MainActivity.this, Game.class);
-                //intent.putExtra("OPEN_ID",acmi.id);
                 startActivity(intentG);
                 return true;
 
             case R.id.action_settings:
                 Intent intentS = new Intent(MainActivity.this, Settings.class);
-                //intent.putExtra("OPEN_ID",acmi.id);
                 startActivity(intentS);
                 return true;
-
 
             default:
                 return super.onOptionsItemSelected(item);
