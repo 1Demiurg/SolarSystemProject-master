@@ -2,7 +2,6 @@
     <string name="app_name">SolarSystemProject</string>
     <string name="action_events">События</string>
     <string name="action_information">Информация</string>
-    <string name="action_game">Игра</string>
     <string name="action_settings">Настройки</string>
     <string-array name="names">
         <item>Солнце</item>

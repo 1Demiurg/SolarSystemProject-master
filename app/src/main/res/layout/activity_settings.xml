@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/text0"
-            android:text="Изменение размеров планет."
+            android:text="Изменение размеров планет.(от -8 до 50)"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"/>
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/text00"
-            android:text="Изменение растояния."
+            android:text="Изменение растояния(не 0)"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"/>
@@ -90,7 +90,7 @@
     android:layout_height="wrap_content">
     <TextView
         android:id="@+id/text000"
-        android:text="Изменение скорости вращения."
+        android:text="Изменение скорости вращения(ограничений нет)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/text0000"
-            android:text="Изменение размеров шрифтаю."
+            android:text="Изменение размеров шрифтаю(от 1 до 100)"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"/>
@@ -151,7 +151,7 @@
             android:layout_alignParentLeft="true" />
         <TextView
             android:id="@+id/text4"
-            android:text="Изменение скорости вращения."
+            android:text="."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"/>

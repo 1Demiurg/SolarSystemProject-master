@@ -26,14 +26,13 @@ public class TestObj implements Renderable, Updatable {
     int G;
     int B;
     String name;
-    String color;
 
 
-    public TestObj(String name,float g,float move, String color,int R,int G,int B,float location,float between) {
+
+    public TestObj(String name,float g,float move,int R,int G,int B,float location,float between) {
         this.name=name;
         this.g=g;
         this.move=move;
-        this.color = color;
         this.R = R;
         this.G = G;
         this.B = B;
@@ -52,9 +51,10 @@ public class TestObj implements Renderable, Updatable {
     @Override
     public void render(Canvas canvas) {
 
-        canvas.drawCircle(ox, py,g* Settings.size_2_0/2, paint);
+        canvas.drawCircle(ox, py,g* Settings.size_2_0/10, paint);
         paint1.setStyle(Paint.Style.FILL);
-        canvas.drawText(name, ox-20, py+g+5, paint1);
+        paint1.setTextSize(Settings.txt);
+        canvas.drawText(name, ox-Settings.txt, py+g+10, paint1);
 
     }
 

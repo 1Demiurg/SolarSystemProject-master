@@ -50,11 +50,6 @@ static public int width,height;
                 startActivity(intent);
                 return true;
 
-            case R.id.action_game:
-                Intent intentG = new Intent(MainActivity.this, Game.class);
-                startActivity(intentG);
-                return true;
-
             case R.id.action_settings:
                 Intent intentS = new Intent(MainActivity.this, Settings.class);
                 startActivity(intentS);

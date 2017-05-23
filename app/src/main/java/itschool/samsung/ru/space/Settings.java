@@ -14,10 +14,10 @@ import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
 
-    public static int size_2_0 = 1;
+    public static int size_2_0 = 10;
     public static int radius = 1;
     public static int spid = 1;
-    public static int txt = 1;
+    public static int txt = 10;
 
     TextView text;
     TextView text2;
@@ -38,17 +38,17 @@ public class Settings extends AppCompatActivity {
         editor.apply();
 
 
-        size_2_0= sp.getInt("Planet 1", 1);
+        size_2_0= sp.getInt("Planet 1", 10);
         radius = sp.getInt("Planet 2", 1);
         spid= sp.getInt("Planet 3", 1);
-        txt= sp.getInt("Planet 4", 1);
+        txt= sp.getInt("Planet 4", 10);
 
         text= (TextView) findViewById(R.id.text);
         text2 = (TextView) findViewById(R.id.text2);
         text3 = (TextView) findViewById(R.id.text3);
         text4 = (TextView) findViewById(R.id.text4);
 
-        text.setText(Integer.toString(size_2_0));
+        text.setText(Integer.toString(size_2_0-9));
         text2.setText(Integer.toString(radius));
         text3.setText(Integer.toString(spid));
         text4.setText(Integer.toString(txt));
@@ -56,22 +56,27 @@ public class Settings extends AppCompatActivity {
 
 
     public void minusSize(View view) {
-        size_2_0=size_2_0-1;
-        text.setText(Integer.toString(size_2_0));
+        if (size_2_0>1) {
+            size_2_0 = size_2_0 - 1;
 
+            text.setText(Integer.toString(size_2_0 - 9));
+        }
     }
     public void plusSize(View view) {
-        size_2_0=size_2_0+1;
-        text.setText(Integer.toString(size_2_0));
-
+        if (size_2_0<50) {
+            size_2_0 = size_2_0 + 1;
+            text.setText(Integer.toString(size_2_0-9));
+        }
     }
 
 
     public void minusradius(View view) {
+        if (radius == 1){radius=radius-1;}
         radius=radius-1;
         text2.setText(Integer.toString(radius));
     }
     public void plusradius(View view) {
+        if (radius == -1){radius=radius+1;}
         radius=radius+1;
         text2.setText(Integer.toString(radius));
     }
@@ -88,12 +93,17 @@ public class Settings extends AppCompatActivity {
 
 
     public void minustext(View view) {
-        txt=txt-1;
-        text4.setText(Integer.toString(txt));
+        if (txt>1) {
+            txt = txt - 1;
+
+            text4.setText(Integer.toString(txt));
+        }
     }
 
     public void plustext(View view) {
-        txt=txt+1;
-        text4.setText(Integer.toString(txt));
+        if (txt<100) {
+            txt = txt + 1;
+            text4.setText(Integer.toString(txt));
+        }
     }
 }

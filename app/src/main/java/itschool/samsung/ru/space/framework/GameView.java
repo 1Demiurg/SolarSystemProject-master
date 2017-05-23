@@ -32,17 +32,18 @@ public class GameView extends View {
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        int rad=25;
+        int rad=30;
 
-        objects.add(new TestObj("Солнце",  139.1f/4, 0,    "RED",     255,36,0, 0,0));
-        objects.add(new TestObj("Венера",  0.6f+11,  3.5f/2, "YELLOW",255,255,153,   2,rad));
-        objects.add(new TestObj("Земля",   0.63f+13, 2.97f/2,"BLUE",  66,170,255,    3,rad));
-        objects.add(new TestObj("Марс",    0.33f+9,  2.41f/2,"RED",   255,43,43 ,    4,rad));
-        objects.add(new TestObj("Юпитер",  6.99f+25, 1.3f/2, "GREEN", 255,201,102,   5,rad));
-        objects.add(new TestObj("Сатурн",  5.82f+22, 0.96f/2,"YELLOW",255,255,153,  6,rad));
-        objects.add(new TestObj("Уран",    2.53f+16, 0.68f/2,"BLUE",  135,206,250 ,  7,rad));
-        objects.add(new TestObj("Нептун",  2.46f+19, 0.54f/2,"BLUE",  0,0,139,    8,rad));
-        objects.add(new TestObj("Плутон",  0.1f+6, 0.45f/2,"GRAY",  255,153,51,    9,rad));
+        objects.add(new TestObj("Солнце",  139.1f/5, 0,         255,36,0, 0,0));
+        objects.add(new TestObj("Меркурий",  0.2f+6,  4f/2,     128,128,128,   1,rad+10));
+        objects.add(new TestObj("Венера",  0.6f+10,  3.5f/2,    255,255,153,   2,rad));
+        objects.add(new TestObj("Земля",   0.63f+12, 2.97f/2,   66,170,255,    3,rad));
+        objects.add(new TestObj("Марс",    0.33f+8,  2.41f/2,   255,43,43 ,    4,rad));
+        objects.add(new TestObj("Юпитер",  6.99f+20, 1.3f/2,    255,201,102,   5,rad));
+        objects.add(new TestObj("Сатурн",  5.82f+18, 0.96f/2,   255,255,153,  6,rad));
+        objects.add(new TestObj("Уран",    2.53f+14, 0.68f/2,   135,206,250 ,  7,rad));
+        objects.add(new TestObj("Нептун",  2.46f+16, 0.54f/2,   0,0,139,    8,rad));
+        objects.add(new TestObj("Плутон",  0.1f+5, 0.45f/2,     255,153,51,    9,rad));
 
         Log.i(TAG, String.valueOf(x)+" "+ String.valueOf(x));
 
