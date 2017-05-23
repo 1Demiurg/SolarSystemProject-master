@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class Settings extends AppCompatActivity {
 
     public static int size_2_0 = 10;
-    public static int radius = 1;
+    public static int radius = 10;
     public static int spid = 1;
     public static int txt = 10;
 
@@ -39,7 +39,7 @@ public class Settings extends AppCompatActivity {
 
 
         size_2_0= sp.getInt("Planet 1", 10);
-        radius = sp.getInt("Planet 2", 1);
+        radius = sp.getInt("Planet 2", 10);
         spid= sp.getInt("Planet 3", 1);
         txt= sp.getInt("Planet 4", 10);
 
@@ -49,7 +49,7 @@ public class Settings extends AppCompatActivity {
         text4 = (TextView) findViewById(R.id.text4);
 
         text.setText(Integer.toString(size_2_0-9));
-        text2.setText(Integer.toString(radius));
+        text2.setText(Integer.toString(radius-9));
         text3.setText(Integer.toString(spid));
         text4.setText(Integer.toString(txt));
     }
@@ -73,12 +73,12 @@ public class Settings extends AppCompatActivity {
     public void minusradius(View view) {
         if (radius == 1){radius=radius-1;}
         radius=radius-1;
-        text2.setText(Integer.toString(radius));
+        text2.setText(Integer.toString(radius-9));
     }
     public void plusradius(View view) {
         if (radius == -1){radius=radius+1;}
         radius=radius+1;
-        text2.setText(Integer.toString(radius));
+        text2.setText(Integer.toString(radius-9));
     }
 
 

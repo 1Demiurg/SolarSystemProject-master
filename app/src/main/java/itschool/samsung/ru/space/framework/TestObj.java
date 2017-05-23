@@ -61,8 +61,8 @@ public class TestObj implements Renderable, Updatable {
     @Override
     public void update(float dt) {
             t +=move/100*Settings.spid;
-            ox = Settings.radius*between* location  * (float) Math.cos((double) t) + GameView.x;
-            py = Settings.radius*between* location *(float) Math.sin((double) t) + GameView.y;
+            ox = Settings.radius/10*between* location  * (float) Math.cos((double) t) + GameView.x;
+            py = Settings.radius/10*between* location *(float) Math.sin((double) t) + GameView.y;
 
     }
 }

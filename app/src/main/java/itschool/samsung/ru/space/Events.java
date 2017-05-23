@@ -19,8 +19,10 @@ public class Events extends AppCompatActivity {
 
     final Context context = this;
     ListView lvMain;
-    String[] word1 = {"Затмения"};
-    String[] word2 = {"Затмения бывают 2 видов солнечное и лунное."};
+    String[] word1 = {"Затмения",
+    " "};
+    String[] word2 = {"Затмения бывают 2 видов солнечное и лунное.",
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
